@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InputFile {
-    public static ArrayList<ContactInformation> InputText(String[] args) {
+    public static ArrayList<ContactInformation> InputText() {
         String filepath = "out.txt";
 
         ArrayList<ContactInformation> data;
         try (
                 FileReader fr = new FileReader(filepath);
-                BufferedReader br = new BufferedReader(fr);
+                BufferedReader br = new BufferedReader(fr)
         ) {
 
             data = new ArrayList<>();

@@ -1,8 +1,10 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public interface Seek {
-    abstract <T> void addressSeek(T e);
-    abstract <T> void firstnameSeek(T e);
-    abstract <T> void lastnameSeek(T e);
+    abstract ArrayList<ContactInformation> addressSeek(ArrayList<ContactInformation> e, String s );
+    abstract ArrayList<ContactInformation> firstnameSeek(ArrayList<ContactInformation> e, String s);
+    abstract ArrayList<ContactInformation> lastnameSeek(ArrayList<ContactInformation> e, String s);
 
 }
