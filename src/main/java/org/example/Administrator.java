@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.function.Consumer;
 
@@ -50,7 +51,7 @@ public class Administrator extends Users{
 
 
         list = super.freeSeek(data);
-        if(list!=null){
+        if(!list.isEmpty()){
             System.out.println(list.get(0).toString());
             ContactInformation elem = Users.getContactInformation();
             System.out.println(elem);
