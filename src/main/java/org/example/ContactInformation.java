@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class ContactInformation {
     private String firstname;
     private String lastname;
@@ -154,6 +156,19 @@ public class ContactInformation {
     }
 
     public String toString() {
-        return "ContactInformation{firstname = " + firstname + ", lastname = " + lastname + ", age = " + age + ", telephone = " + telephone + ", city = " + city + ", street = " + street + ", postcode = " + postcode + ", doornum = " + doornum + "}";
+        return  firstname + "," + lastname + "," + age + "," + telephone + "," + city + "," + street + "," + postcode + "," + doornum;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactInformation that = (ContactInformation) o;
+        return age == that.age && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(telephone, that.telephone) && Objects.equals(city, that.city) && Objects.equals(street, that.street) && Objects.equals(postcode, that.postcode) && Objects.equals(doornum, that.doornum);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstname, lastname, age, telephone, city, street, postcode, doornum);
     }
 }
