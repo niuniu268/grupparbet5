@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Users implements Seek{
 
+    List<ContactInformation> list;
+
     public  void questions(ArrayList<ContactInformation> data){
         Scanner sc = new Scanner(System.in);
         System.out.println("1. Add");
@@ -84,7 +86,7 @@ public class Users implements Seek{
 
             case "4" ->
 
-                this.freeSeek(data);
+                 list = this.freeSeek(data);
 
         }
 
@@ -130,14 +132,14 @@ public class Users implements Seek{
     }
 
     @Override
-    public void freeSeek(ArrayList<ContactInformation> e) {
+    public List<ContactInformation> freeSeek(ArrayList<ContactInformation> e) {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("what do you want to search:");
         String search = sc.nextLine();
         List<ContactInformation> list = e.stream().filter(s -> s.toString().contains(search)).toList();
         showSearchedItem(list);
-//        return (ArrayList<ContactInformation>) list;
+        return list;
     }
 
     private void showSearchedItem(List<ContactInformation> list){

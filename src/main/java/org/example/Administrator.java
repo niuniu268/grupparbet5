@@ -23,38 +23,39 @@ public class Administrator extends Users{
             }
             case "3" -> {
                 System.out.println(" update");
-//                this.update(data);
+                this.update(data);
             }
             case "4" -> {
                 System.out.println("delete");
-//                this.delete(data);
+                this.delete(data);
             }
         }
     }
 
-/*
+
+
     public void delete(ArrayList<ContactInformation> data){
 
+        list = super.freeSeek(data);
 
         System.out.println("Do you want to delete these data? Y or N");
         Scanner sc = new Scanner(System.in);
 
         if("Y".equals(sc.nextLine())){
-            data.removeAll(deleteList);
+            data.removeAll(list);
         }
-
     }
 
     public void update(ArrayList<ContactInformation> data) {
 
 
-        ArrayList<ContactInformation> updateList = super.freeSeek(data);
-        if(updateList!=null){
-            System.out.println(updateList.get(0).toString());
+        list = super.freeSeek(data);
+        if(list!=null){
+            System.out.println(list.get(0).toString());
             ContactInformation elem = Users.getContactInformation();
             System.out.println(elem);
             data.forEach(s -> {
-                    if (updateList.get(0).equals(s)){
+                    if (list.get(0).equals(s)){
                         s.setFirstname(elem.getFirstname());
                         s.setLastname(elem.getLastname());
                         s.setAge(elem.getAge());
@@ -70,7 +71,8 @@ public class Administrator extends Users{
             System.out.println("please use add function");
         }
     }
-*/
+
+
 
 
 

@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.function.Consumer;
 
@@ -8,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<ContactInformation> data = new ArrayList<>();
+
 //        data = InputFile.InputText();
 
         ContactInformation ci1 = new ContactInformation("louis","han",23,"123456","malmo","lundsgatan","21188","12");
@@ -18,6 +20,8 @@ public class Main {
         data.add(ci2);
         data.add(ci3);
         data.add(ci4);
+
+
 
 
         Scanner sc = new Scanner(System.in);
@@ -39,6 +43,7 @@ public class Main {
                     adm.questions(data);
                 }
                 case "3" ->{
+                    OutputFile.outputTextFile(data);
                     System.exit(0);
                 }
             }
