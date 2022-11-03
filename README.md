@@ -44,3 +44,6 @@ Förmåga att avsluta programmet genom att skriva “quit” i konsolen.
 Förmåga att ta bort kontaktinformation för någon tillagd profil.
 Förmåga att uppdatera kontaktinformation för någon tillagd profil.
 Samma övriga rättigheter som en gästanvändare.
+
+![Logical map](https://github.com/niuniu268/grupparbet5/blob/master/images/logic1.png "the logical map")
+
