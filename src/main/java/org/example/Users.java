@@ -6,9 +6,15 @@ import java.util.Scanner;
 
 public class Users implements Seek{
 
+    protected ArrayList<ContactInformation> data;
+
+    public Users(ArrayList<ContactInformation> data) {
+        this.data = data;
+    }
+
     List<ContactInformation> list;
 
-    public  void questions(ArrayList<ContactInformation> data){
+    public  void questions(){
         Scanner sc = new Scanner(System.in);
         System.out.println("1. Add");
         System.out.println("2. Search");
@@ -41,17 +47,17 @@ public class Users implements Seek{
         ContactInformation ci = new ContactInformation();
         Scanner scanner = new Scanner(System.in);
         System.out.println("firstname");
-        ci.setFirstname(scanner.nextLine());
+        ci.setFirstname(scanner.nextLine().toLowerCase());
         System.out.println("lastname");
-        ci.setLastname(scanner.nextLine());
+        ci.setLastname(scanner.nextLine().toLowerCase());
         System.out.println("age");
         ci.setAge(Integer.parseInt(scanner.nextLine()));
         System.out.println("telphone number");
         ci.setTelephone(scanner.nextLine());
         System.out.println("city");
-        ci.setCity(scanner.nextLine());
+        ci.setCity(scanner.nextLine().toLowerCase());
         System.out.println("street");
-        ci.setStreet(scanner.nextLine());
+        ci.setStreet(scanner.nextLine().toLowerCase());
         System.out.println("postcode");
         ci.setPostcode(scanner.nextLine());
         System.out.println("door num");
@@ -97,9 +103,8 @@ public class Users implements Seek{
 
         Scanner sc = new Scanner(System.in);
         System.out.println("address:");
-        String address = sc.nextLine();
         ContactInformation ci = new ContactInformation();
-        ci.setStreet(address);
+        ci.setStreet(sc.nextLine().toLowerCase());
         List<ContactInformation> list = e.stream().filter(s -> ci.getStreet().equals(s.getStreet())).toList();
         showSearchedItem(list);
 
@@ -110,11 +115,17 @@ public class Users implements Seek{
         Scanner sc = new Scanner(System.in);
         System.out.println("firstname:");
         ContactInformation ci = new ContactInformation();
-        ci.setFirstname(sc.nextLine());
+        ci.setFirstname(sc.nextLine().toLowerCase());
         List<ContactInformation> list = e.stream()
                 .filter(s -> ci.getFirstname().equals(s.getFirstname()))
                 .toList();
-        showSearchedItem(list);
+
+        if(list.isEmpty()){
+            System.out.println("we cannot find the information which you want to search. please try again");
+        } else{
+            System.out.println(list.get(0).toString());
+        }
+
 
     }
 
@@ -123,9 +134,8 @@ public class Users implements Seek{
 
         Scanner sc = new Scanner(System.in);
         System.out.println("lastname:");
-        String lastname = sc.nextLine();
         ContactInformation ci = new ContactInformation();
-        ci.setLastname(lastname);
+        ci.setLastname(sc.nextLine().toLowerCase());
         List<ContactInformation> list = e.stream().filter(s -> ci.getLastname().equals(s.getLastname())).toList();
         showSearchedItem(list);
 
@@ -136,14 +146,20 @@ public class Users implements Seek{
 
         Scanner sc = new Scanner(System.in);
         System.out.println("what do you want to search:");
-        String search = sc.nextLine();
+        String search = sc.nextLine().toLowerCase();
         List<ContactInformation> list = e.stream().filter(s -> s.toString().contains(search)).toList();
         showSearchedItem(list);
         return list;
     }
 
     private void showSearchedItem(List<ContactInformation> list){
-        list.forEach(System.out::println);
+        if(list.isEmpty()){
+            System.out.println("we cannot find the information which you want to search. please try again");
+        }else {
+            list.forEach(System.out::println);
+        }
+
+
     }
 
 

@@ -1,14 +1,32 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.List;
+
+
 import java.util.Scanner;
-import java.util.function.Consumer;
+
 
 public class Administrator extends Users{
 
+    private static final String username = "admin";
+    private static final String password = "12345";
+
+    public Administrator(ArrayList<ContactInformation> data) {
+        super(data);
+    }
+
+    public static String getUsername() {
+        return username;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+
+
     @Override
-    public void questions(ArrayList<ContactInformation> data) {
+    public void questions() {
         Scanner sc = new Scanner(System.in);
         System.out.println("1. Add");
         System.out.println("2. Search");
@@ -18,18 +36,18 @@ public class Administrator extends Users{
             case "1" ->
                 this.add(data);
 
-            case  "2" -> {
-                System.out.println("create Seeking Questions");
+            case  "2" ->
+
                 this.seekingQuestion(data);
-            }
-            case "3" -> {
-                System.out.println(" update");
+
+            case "3" ->
+
                 this.update(data);
-            }
-            case "4" -> {
-                System.out.println("delete");
+
+            case "4" ->
+
                 this.delete(data);
-            }
+
         }
     }
 
@@ -51,7 +69,15 @@ public class Administrator extends Users{
 
 
         list = super.freeSeek(data);
-        if(!list.isEmpty()){
+        System.out.println("=========================================");
+        System.out.println("Do you want to update the first line? Y/N");
+        System.out.println("=========================================");
+        System.out.println();
+        System.out.println("Follow information will be updated:");
+        Scanner sc = new Scanner(System.in);
+        String answer = sc.nextLine();
+
+        if(!list.isEmpty() && "Y".equals(answer)){
             System.out.println(list.get(0).toString());
             ContactInformation elem = Users.getContactInformation();
             System.out.println(elem);
@@ -69,7 +95,7 @@ public class Administrator extends Users{
             });
 
         }else{
-            System.out.println("please use add function");
+            System.out.println("please use add new information");
         }
     }
 

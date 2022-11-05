@@ -11,7 +11,7 @@ public class OutputFile {
 
     public static void outputTextFile(ArrayList<ContactInformation> list) {
 
-        String path = "out.txt";
+        String path = "database.txt";
 
         try (FileWriter fw = new FileWriter(path);
              BufferedWriter bw = new BufferedWriter(fw);
@@ -35,7 +35,7 @@ public class OutputFile {
                 }
             });
 
-            bw.close();
+
 
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -1,15 +1,13 @@
 package org.example;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class InputFile {
     public static ArrayList<ContactInformation> InputText() {
-        String filepath = "out.txt";
+        String filepath = "database.txt";
 
         ArrayList<ContactInformation> data;
         try (
@@ -21,7 +19,7 @@ public class InputFile {
             String line;
             while ((line = br.readLine()) != null) {
 
-                String[] arr = new String[8];
+                String[] arr ;
                 ContactInformation ci = new ContactInformation();
                 arr = line.split(",");
 
