@@ -45,6 +45,12 @@ Förmåga att ta bort kontaktinformation för någon tillagd profil.
 Förmåga att uppdatera kontaktinformation för någon tillagd profil.
 Samma övriga rättigheter som en gästanvändare.
 
+<<<<<<< HEAD
 ![Logical map](https://github.com/niuniu268/grupparbet5/blob/master/images/logic1.png "logical map")
 
 ![UML graph](https://github.com/niuniu268/grupparbet5/blob/master/images/uml%20Diagram.drawio.png "UML Graph")
+=======
+![Logical map](https://github.com/niuniu268/grupparbet5/blob/master/images/logic1.png "Logical map")
+
+![UML diagram](https://github.com/niuniu268/grupparbet5/blob/master/images/uml%20Diagram.drawio.png "UML Diagram")
+>>>>>>> b88e201 (add uml graph)
