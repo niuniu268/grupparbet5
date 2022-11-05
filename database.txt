@@ -1,0 +1,12 @@
+tt,ff,88,23456,lund,ostravarvsgata,12,12345
+hongwei,wang,45,23456,stockholm,varvsgatan,12,1111
+dog,cat,66,123456,goteborg,lundsgatan,12,21188
+rr,55,77,889,00,kk,HH,JJ
+hongwei,han,23,123456,malmo,lundsgatan,12,21188
+louis,wang,45,23456,stockholm,varvsgatan,12,1111
+tiger,cat,66,123456,goteborg,lundsgatan,12,21188
+dog,cat,99,123456,louis,lundsgatan,12,21188
+hongwei,han,23,123456,malmo,lundsgatan,12,21188
+louis,wang,45,23456,stockholm,varvsgatan,12,1111
+tiger,cat,66,123456,goteborg,lundsgatan,12,21188
+dog,cat,99,123456,louis,lundsgatan,12,21188
