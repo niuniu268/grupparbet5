@@ -58,4 +58,4 @@ Moreover, we create a UML graphy. By means of the UML graphy, we can create a co
 In the end, we have finish this project:
 
 When users can this project, they can see the first question as the picture 1.
-![Picture 1](https://github.com/niuniu268/grupparbet5/blob/master/images/bild1,png "Introduction")
+![bild1](https://github.com/niuniu268/grupparbet5/blob/master/images/bild1,png "Bild1")
