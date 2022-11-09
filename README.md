@@ -58,5 +58,17 @@ Moreover, we create a UML graphy. By means of the UML graphy, we can create a co
 In the end, we have finish this project:
 
 When users can this project, they can see the first question as the picture 1.
+
 ![bild1](https://github.com/niuniu268/grupparbet5/blob/master/images/bild1.png "Bild1")
 
+![bild2](https://github.com/niuniu268/grupparbet5/blob/master/images/bild2.png "Bild2")
+
+![bild3](https://github.com/niuniu268/grupparbet5/blob/master/images/bild3.png "Bild3")
+![bild4](https://github.com/niuniu268/grupparbet5/blob/master/images/bild4.png "Bild4")
+![bild5](https://github.com/niuniu268/grupparbet5/blob/master/images/bild5.png "Bild5")
+![bild6](https://github.com/niuniu268/grupparbet5/blob/master/images/bild6.png "Bild6")
+![bild7](https://github.com/niuniu268/grupparbet5/blob/master/images/bild7.png "Bild7")
+![bild8](https://github.com/niuniu268/grupparbet5/blob/master/images/bild8.png "Bild8")
+![bild9](https://github.com/niuniu268/grupparbet5/blob/master/images/bild9.png "Bild9")
+![bild10](https://github.com/niuniu268/grupparbet5/blob/master/images/bild10.png "Bild10")
+![bild11](https://github.com/niuniu268/grupparbet5/blob/master/images/bild11.png "Bild11")
