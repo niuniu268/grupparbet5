@@ -28,7 +28,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
 
-        while (true){
+        loop: while (true){
             System.out.println("Which account do you want to use?");
             System.out.println("1. Guest users");
             System.out.println("2. Administrator");
@@ -46,7 +46,7 @@ public class Main {
                 }
                 case "3" ->{
                     OutputFile.outputTextFile(data);
-                    System.exit(0);
+                    break loop;
                 }
             }
 

@@ -96,6 +96,7 @@ public class Administrator extends Users{
 
         }else{
             System.out.println("please use add new information");
+            System.out.println();
         }
     }
 
