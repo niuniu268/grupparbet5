@@ -45,6 +45,17 @@ Förmåga att ta bort kontaktinformation för någon tillagd profil.
 Förmåga att uppdatera kontaktinformation för någon tillagd profil.
 Samma övriga rättigheter som en gästanvändare.
 
+## Result
+
+We primarily draw a roadmap by which users use this program.
+
 ![Logical map](https://github.com/niuniu268/grupparbet5/blob/master/images/logic1.png "logical map")
 
+Moreover, we create a UML graphy. By means of the UML graphy, we can create a couple of classes and methods.
+
 ![UML graph](https://github.com/niuniu268/grupparbet5/blob/master/images/uml%20Diagram.drawio.png "UML Graph")
+
+In the end, we have finish this project:
+
+When users can this project, they can see the first question as the picture 1.
+![Picture 1](https://github.com/niuniu268/grupparbet5/blob/master/images/bild1,png "Introduction")
