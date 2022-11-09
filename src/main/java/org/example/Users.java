@@ -35,7 +35,7 @@ public class Users implements Seek{
 
         data.add(ci);
 
-
+        showSearchedItem(data);
 
         return data;
 
@@ -66,7 +66,6 @@ public class Users implements Seek{
         /*finish add method*/
 
         System.out.println("the new data:" + ci);
-        System.out.println();
         return ci;
     }
 
@@ -158,7 +157,6 @@ public class Users implements Seek{
             System.out.println("we cannot find the information which you want to search. please try again");
         }else {
             list.forEach(System.out::println);
-            System.out.println();
         }
 
 
